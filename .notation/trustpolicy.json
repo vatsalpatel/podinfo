@@ -4,7 +4,7 @@
         {
             "name": "stefanprodan.com",
             "registryScopes": [
-                "ghcr.io/stefanprodan/podinfo-deploy",
+                "ghcr.io/vatsalpatel/podinfo-deploy",
                 "ghcr.io/stefanprodan/charts/podinfo"
             ],
             "signatureVerification": {

@@ -17,7 +17,7 @@ brew install sigstore/tap/cosign
 Verify the podinfo container image hosted on GHCR:
 
 ```sh
-cosign verify ghcr.io/stefanprodan/podinfo:6.5.0 \
+cosign verify ghcr.io/vatsalpatel/podinfo:6.5.0 \
 --certificate-identity-regexp="^https://github.com/stefanprodan/podinfo.*$" \
 --certificate-oidc-issuer=https://token.actions.githubusercontent.com
 ```

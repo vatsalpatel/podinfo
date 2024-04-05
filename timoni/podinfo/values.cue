@@ -8,8 +8,8 @@ package main
 // Defaults
 values: {
 	image: {
-		repository: "ghcr.io/stefanprodan/podinfo"
-		tag:        "6.6.1"
+		repository: "ghcr.io/vatsalpatel/podinfo"
+		tag:        "1.0.0"
 		digest:     ""
 	}
 	test: image: {

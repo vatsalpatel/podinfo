@@ -8,7 +8,7 @@ backends: []
 
 image:
   repository: ghcr.io/vatsalpatel/podinfo
-  tag: 6.6.1
+  tag: 1.0.0
   pullPolicy: IfNotPresent
 
 ui:

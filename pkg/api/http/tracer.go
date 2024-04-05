@@ -9,7 +9,6 @@ import (
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux"
 	"go.opentelemetry.io/contrib/propagators/aws/xray"
 	"go.opentelemetry.io/contrib/propagators/b3"
-	"go.opentelemetry.io/contrib/propagators/jaeger"
 	"go.opentelemetry.io/contrib/propagators/ot"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
@@ -53,7 +52,6 @@ func (s *Server) initTracer(ctx context.Context) {
 		propagation.TraceContext{},
 		propagation.Baggage{},
 		b3.New(),
-		&jaeger.Jaeger{},
 		&ot.OT{},
 		&xray.Propagator{},
 	))

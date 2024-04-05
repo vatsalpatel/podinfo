@@ -7,7 +7,7 @@ backend: #http://backend-podinfo:9898/echo
 backends: []
 
 image:
-  repository: ghcr.io/stefanprodan/podinfo
+  repository: ghcr.io/vatsalpatel/podinfo
   tag: 6.6.1
   pullPolicy: IfNotPresent
 
@@ -188,3 +188,5 @@ probes:
     failureThreshold: 20
     successThreshold: 1
     periodSeconds: 10
+
+otelServiceName: "tempo-gateway"
